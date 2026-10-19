@@ -37,7 +37,7 @@ jobs:
             "https://archive.ics.uci.edu/static/public/20/census+income.zip" \
             -o /tmp/census-income.zip
 
-          unzip -o /tmp/census-income.zip -d ./data
+          unzip -o /tmp/census-income.zip -d ./data/raw
 
           rm /tmp/census-income.zip
 
