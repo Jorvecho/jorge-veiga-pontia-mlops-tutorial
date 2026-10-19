@@ -48,11 +48,11 @@ jobs:
         run: |
           python src/main.py
         env: 
-        AZURE_TENANT_ID: ${{secrets.AZURE_TENANT_ID}}
-        AZURE_CLIENT_ID: ${{secrets.AZURE_CLIENT_ID}}
-        AZURE_CLIENT_SECRET: ${{secrets.AZURE_CLIENT_SECRET}}
-        EXPERIMENT_NAME: ${{vars.EXPERIMENT_NAME}}
-        MLFLOW_URL: ${{vars.MLFLOW_URL}}
+          AZURE_TENANT_ID: ${{secrets.AZURE_TENANT_ID}}
+          AZURE_CLIENT_ID: ${{secrets.AZURE_CLIENT_ID}}
+          AZURE_CLIENT_SECRET: ${{secrets.AZURE_CLIENT_SECRET}}
+          EXPERIMENT_NAME: ${{vars.EXPERIMENT_NAME}}
+          MLFLOW_URL: ${{vars.MLFLOW_URL}}
         
           
       - name: Publicar artefactos
